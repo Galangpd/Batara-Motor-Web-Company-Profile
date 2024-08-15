@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    z-index: 10001 !important;
+}
+
+.btnPrimary {
+    @apply bg-primary mx-auto text-slate-100 px-6 py-2 rounded-lg hover:bg-blue-800 text-sm md:text-lg lg:text-xl transition-all duration-300;
+}
+
+.label {
+    @apply bg-primary bg-opacity-80 w-full text-white py-3 text-xl md:text-2xl font-bold;
+}
+
+.labelBg{
+   @apply w-28 sm:w-40 md:w-52 lg:w-72  relative text-center flex items-center justify-center rounded-2xl bg-cover hover:opacity-85
+}
+
+.cardService{
+    @apply border border-primary h-full px-2 sm:px-6 py-3 hover:border-2 text-center text-sm md:text-base space-y-3
+}
+
+.cardProduct{
+    @apply border border-primary h-full px-2 sm:px-6 py-3 mx-auto hover:border-2
+}
+
+.input{
+    @apply border border-slate-400 w-full py-2 px-2 rounded-md focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600
+    focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+}
+
+.footerIcon{
+    @apply w-8 md:w-[40px] flex px-2 py-2 border border-white hover:border-2
+}
+
+.menuFooter{
+    @apply inline-block font-light hover:font-semibold mb-5 text-sm sm:text-base
+}
