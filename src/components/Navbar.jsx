@@ -52,7 +52,7 @@ const Navbar = () => {
                     </nav>
                     <div className={`left-0 rounded-b-lg bg-primary ${isMenuOpen ? "block fixed top-[60px] right-0 left-0" : "hidden"}`}>
                                   {
-                                    navItem.map(({link,path}) => <a key={link} href={path} className=' px-5 py-3 h-full w-full block text-slate-100 hover:bg-blue-800 rounded-lg'>{link}</a>)
+                                    navItem.map(({link,path}) => (<Link key={link} to={path} className=' px-5 py-3 h-full w-full block text-slate-100 hover:bg-blue-800 rounded-lg'>{link}</Link>))
                                   }  
                     </div>
                 </div>
